@@ -1,8 +1,8 @@
-# HorizonBooks (e-library-web)
+;p0# HorizonBooks (e-library-web)
 
 HorizonBooks is an e-library web app focused on African history and literature — built to make it easy to discover, read about, and track books on African heritage, culture, and the leaders who shaped it.
 
-Built as a project for the ITExperience Intern Defence program (a 6-month skills/internship track), to demonstrate practical full-stack web development and secure backend design.
+Built as a project for the Swiss Intern Defence program (a 6-month skills/internship track), to demonstrate practical full-stack web development and secure backend design.
 
 > No live demo — hosting expired and wasn't renewed. Clone and run it locally with XAMPP using the steps below.
 
@@ -26,9 +26,8 @@ Built as a project for the ITExperience Intern Defence program (a 6-month skills
 
 | Home | Leaders feature | Dashboard |
 |---|---|---|
-| ![Home](screenshots/home.png) | ![Leaders](screenshots/leaders.png) | ![Dashboard](screenshots/dashboard.png) |
+| ![Home](home.png) | ![Leaders](leaders.png) | ![Dashboard](about.png) |
 
-*(Add the screenshot files to a `screenshots/` folder in the repo for these to render — see "Adding screenshots" below.)*
 
 ## Running it locally (XAMPP)
 
@@ -47,8 +46,7 @@ Built as a project for the ITExperience Intern Defence program (a 6-month skills
 
 4. **Set the database connection** in `php/db.php` to point at your local MySQL instance:
    ```php
-   $conn = new mysqli('localhost', 'root', '', 'horizonbooks');
-   ```
+   
    (Default XAMPP MySQL has no root password — adjust the username/password if yours is different.)
 
 5. **Add your Firebase config.** The app uses Firebase Authentication. Create `js/firebase-config.js` (gitignored — not committed) with your own Firebase project keys:
@@ -79,10 +77,6 @@ e-library-web/
 ├── css/         # Stylesheets
 └── vendor/      # Composer dependencies (ignored in git)
 ```
-
-## Security notes
-
-This repo had its git history rewritten to remove an accidentally committed Firebase API key. The key was rotated and the GitHub secret-scanning alert closed as resolved. Going forward, all credentials (Firebase client config, service account JSON, DB passwords) are kept out of version control via `.gitignore`.
 
 ## Author
 
