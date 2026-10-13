@@ -1,0 +1,15 @@
+{
+    "name": "charles/horizon",
+    "description": "Firebase integration for e-library",
+    "type": "project",
+    "authors": [
+        {
+            "name": "charles nnanna",
+            "email": "erenestcharles398@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "kreait/firebase-php": "^5.26"
+    }
+}

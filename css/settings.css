@@ -1,0 +1,238 @@
+/* ---------- GLOBAL ---------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  color: #111;
+  display: flex;
+  min-height: 100vh;
+  gap: 0;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: 240px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: transform 0.35s cubic-bezier(0.2,0.9,0.2,1), box-shadow 0.25s;
+  transform: translateX(0);
+  position: relative;
+  z-index: 100;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.25s, color 0.25s, opacity 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background-color: #8f00ff;
+}
+
+/* Active page indicator */
+.sidebar a.active {
+  background-color: #400677; /* current page highlight */
+  opacity: 0.95;
+  box-shadow: 0 2px 8px rgba(64, 6, 119, 0.3);
+}
+
+/* Click feedback */
+.sidebar a:active {
+  opacity: 0.7;
+}
+
+/* ---------- MENU TOGGLE ---------- */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1200;
+  background: #000;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* ---------- CLOSE BUTTON ---------- */
+.close-btn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 1.4em;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.main-content {
+  flex: 1;
+  padding: 80px 30px 40px 30px; /* increased top padding for content to go down */
+  overflow-y: auto;
+  transition: filter 0.25s ease, margin-left 0.25s ease;
+}
+
+.topbar h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* ---------- SETTINGS / PROFILE ---------- */
+.settings-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.profile-board, .activity-board {
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background: #f8f8f8;
+}
+
+.profile-board {
+  flex: 1 1 320px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-icon {
+  font-size: 50px;
+  color: black;
+}
+
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #8f00ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background: #6c00cc;
+}
+
+.actions .danger {
+  background: #ff4d4d;
+}
+
+.actions .danger:hover {
+  background: #e60000;
+}
+
+.activity-board {
+  flex: 1 1 500px;
+  background: #fafafa;
+}
+
+.activity-board h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+}
+
+.activity-list li span {
+  color: #666;
+  font-size: 0.85em;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #7c6f64;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  body { flex-direction: column; }
+
+  .menu-toggle { display: flex; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    transform: translateX(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: left 0.35s cubic-bezier(0.2,0.9,0.2,1);
+  }
+
+  .sidebar.active { left: 0; transform: translateX(0); }
+
+  .main-content.blur {
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .main-content { padding: 60px 20px; } /* responsive top padding */
+  .settings-section { flex-direction: column; }
+}

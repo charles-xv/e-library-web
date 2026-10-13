@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community | Horizons</title>
+  <link rel="stylesheet" href="../css/comm.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+ <header>
+  <nav class="navbar">
+    <div class="logo">
+      HORIZONS
+      <img class="map" src="../images-z/Drum4.png" alt="image of a drum" />
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../php/myBooks.php">My Books</a></li>
+      <li><a href="Trend.html">Trending</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Overlay Menu -->
+  <div class="nav-overlay">
+    <ul class="overlay-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="../php/myBooks.php">My Books</a></li>
+      <li><a href="Trend.html">Trending</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const hamburger = document.querySelector('.hamburger');
+  const overlay = document.querySelector('.nav-overlay');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    overlay.classList.toggle('show');
+  });
+
+  // Close overlay when clicking a link
+  document.querySelectorAll('.overlay-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      overlay.classList.remove('show');
+    });
+  });
+</script>
+
+  <!-- ================= MAIN SECTION ================= -->
+  <main class="community-container">
+    <h1 class="community-title">Community</h1>
+    <p class="community-subtitle">Connect, share, and explore with other readers.</p>
+
+    <section class="community-grid">
+      <!-- Left: Topics -->
+      <aside class="topics-card">
+        <h3>Topic: Tags</h3>
+        <ul class="topic-list">
+          <li># BookTalk</li>
+          <li># AfricanStories</li>
+          <li># Poetry</li>
+        </ul>
+        <button class="join-btn">+ Host risqut page</button>
+        <a href="#" class="join-link">Join Topic</a>
+      </aside>
+
+      <!-- Middle: Discussion Feed -->
+      <section class="feed">
+        <div class="post-card">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="user" class="avatar" />
+          <div class="post-content">
+            <h4>Discussion Feed</h4>
+            <p>Deeain hooktitling and be ascorins</p>
+            <span class="author">Janie: S.T.M · 14 AI</span>
+            <div class="post-actions">
+              <a href="#" class="btn">Comment</a>
+              <a href="#" class="btn">Share</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="user" class="avatar" />
+          <div class="post-content">
+            <h4>Dia Alone Fotal</h4>
+            <p>Fur threeppy fnol and paɿse mame.</p>
+            <span class="author">Janie: S.T.M · 14 AI</span>
+            <div class="post-actions">
+              <a href="#" class="btn">Comment</a>
+              <a href="#" class="btn">Share</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="user" class="avatar" />
+          <div class="post-content">
+            <h4>Koon Tollung</h4>
+            <p>Geease the difisk hours dileoz czn</p>
+            <span class="author">Janie: S.T.M · 14 AI</span>
+            <div class="post-actions">
+              <a href="#" class="btn">Comment</a>
+              <a href="#" class="btn">Reply</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Active Members -->
+      <aside class="members-card">
+        <h3>Active Members</h3>
+        <ul class="members-list">
+          <li>
+            <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="user" class="avatar-sm" />
+            <span>BookTalk</span><small>21:20</small>
+          </li>
+          <li>
+            <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="user" class="avatar-sm" />
+            <span>Comment</span><small>21:24</small>
+          </li>
+          <li>
+            <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="user" class="avatar-sm" />
+            <span>Gaora</span><small>27:13</small>
+          </li>
+        </ul>
+        <a href="#" class="join-link">Join Topic</a>
+      </aside>
+    </section>
+
+    <!-- Bottom: Top Discussions -->
+    <section class="top-discussions">
+      <h3>Top Discussions of the Week</h3>
+      <div class="discussion-grid">
+        <div class="discussion-item">
+          <h4>📚 Book Talk</h4>
+          <p>#chililatics</p>
+        </div>
+        <div class="discussion-item">
+          <h4>#BookTalk</h4>
+          <p>Gerfunot ko highfered šiü canayators</p>
+        </div>
+        <div class="discussion-item">
+          <h4>Houicany</h4>
+          <p>Deewonsigates peurdod sidnring or reaseif</p>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+<!-- ================= FOOTER ================= -->
+    <footer>
+  <p>
+    © 2025 Horizons Bookshelf | Built by
+    <a href="#">WEBINK</a>
+  </p>
+</footer>
+
+  
+</body>
+</html>

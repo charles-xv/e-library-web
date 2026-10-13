@@ -1,0 +1,128 @@
+/* 🌍 GLOBAL STYLESHEET (global.css)
+   Shared by all pages in Horizons
+*/
+
+/* ===== GOOGLE FONT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ===== UNIVERSAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #8f00ff;
+}
+
+.sidebar a.active {
+  background: #400677;
+}
+
+/* Close button (hidden on desktop) */
+.close-btn {
+  display: none;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+/* ===== MENU TOGGLE ===== */
+.menu-toggle {
+  display: none;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  transition: filter 0.3s ease;
+}
+
+.main-content.blur {
+  filter: blur(2px);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  /* Sidebar slides out */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  /* Show hamburger menu */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* Show close icon in sidebar */
+  .close-btn {
+    display: block;
+    color: #fff;
+  }
+}

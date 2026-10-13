@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+  </head>
+  <body>
+   
+  <!-- ================= NAVBAR ================= -->
+ <header>
+  <nav class="navbar">
+    <div class="logo">
+      HORIZONS
+      <img class="map" src="../images-z/Drum4.png" alt="image of a drum" />
+    </div>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="../php/myBooks.php">My Books</a></li>
+      <li><a href="Trend.html">Trending</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Fullscreen Overlay Menu -->
+  <div class="nav-overlay">
+    <ul class="overlay-links">
+      <li><a href="index.html"class="active">Home</a></li>
+      <li><a href="../php/myBooks.php">My Books</a></li>
+      <li><a href="Trend.html">Trending</a></li>
+      <li><a href="community.html">Community</a></li>
+    </ul>
+  </div>
+</header>
+
+    <main>
+      <!-- ================= HERO SECTION ================= -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Discover Yesterday, Inspire Tomorrow</h1>
+          <p>
+            Welcome to our modern book site where literature comes to life.
+            <br />
+            Find your next book, explore new stories, and build your own digital
+            shelf. Read more, worry less.
+          </p>
+          <a href="../php/SignUp.php" class="btn-signup">Sign Up</a>
+        </div>
+        <div class="hero-image">
+          <img src="../images-z/logoA.png" alt="Hero 3D Placeholder" />
+        </div>
+      </section>
+      <!-- ================= LEADERS SECTION ================= -->
+       <section class="categories-leaders">
+
+ <div class="circle-wrapper">
+  <div class="side-circle"></div>
+</div>
+      <section class="leaders">
+        <h2>Leaders Who Shaped History</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="../images-z/Martin.jpg" alt="Martin Luther King Jr." />
+            <h3>Martin Luther King Jr.</h3>
+            <p>
+              Civil rights leader who championed nonviolent resistance in the
+              fight for racial equality.
+            </p>
+           <a href="../php/SignUp.php?redirect=luther-king" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="../images-z/Mandela .jpg" alt="Nelson Mandela" />
+            <h3>Nelson Mandela</h3>
+            <p>
+              Anti-apartheid revolutionary and the first Black president of
+              South Africa.
+            </p>
+            <a href="../php/SignUp.php?redirect=nelson-mandela" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="../images-z/Tubeman.jpg" alt="Harriet Tubman" />
+            <h3>Harriet Tubman</h3>
+            <p>
+              Abolitionist who led enslaved people to freedom through the
+              Underground Railroad.
+            </p>
+            <a href="../php/SignUp.php?redirect=harriet-tubeman" class="btn">Learn More</a>
+          </div>
+        </div>
+      </section>
+    <!-- Decorative half circle -->
+
+  <! ================= CATEGORIES SECTION ================= -- >
+
+    <section class="categories">
+      <h2>Explore Categories</h2>
+      <div class="category-grid">
+        <!-- Civil Rights -->
+        <div class="category-card">
+          <img
+            src="../images-z/protest.jpg"
+            alt="Civil Rights"
+            class="card-img"
+          />
+          <div class="card-overlay">
+            <h3>Civil Rights</h3>
+            <p>Explore the struggles and triumphs of freedom movements.</p>
+          </div>
+        </div>
+
+        <!-- African Literature -->
+        <div class="category-card">
+          <img
+            src="../images-z/yellow.jpg"
+            alt="African Literature"
+            class="card-img"
+          />
+          <div class="card-overlay">
+            <h3>African Literature</h3>
+            <p>Discover timeless stories and voices from across Africa.</p>
+          </div>
+        </div>
+
+        <!-- Women Leaders -->
+        <div class="category-card">
+          <img
+            src="../images-z/womenLeaders.jpg"
+            alt="Women Leaders"
+            class="card-img"
+          />
+          <div class="card-overlay">
+            <h3>Women Leaders</h3>
+            <p>Learn from women who shaped history and broke barriers.</p>
+          </div>
+        </div>
+
+        <!-- African heritage-->
+        <div class="category-card">
+          <img
+            src="../images-z/Giza.jpg"
+            alt="image of Giza Pyramids"
+            class="card-img"
+          />
+          <div class="card-overlay">
+            <h3>Heritage & Civilizations</h3>
+            <p>Step into the legacies of Africa’s ancient civilizations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <!-- ================= QUOTE SECTION ================= -->
+ <section class="quote-section">
+  <div class="quote-container">
+    <img src="../images-z/morison.jpg" alt="Toni Morrison" class="quote-image">
+    <p class="quote-text">
+       <div class="quote-mark left">❝</div> “The function of freedom is to free someone else.” <div class="quote-mark right">❞</div>
+    </p>
+    <span class="quote-author">-- Toni Morrison</span>
+  </div>
+</section>
+
+<section class="book-section">
+  <h2 class="section-title">Discover More</h2>
+  <div class="book-grid">
+    <div class="book-card" data-link="https://openlibrary.org/works/OL15878W">
+      <img src="https://m.media-amazon.com/images/I/31V+4z9vxDL._SY445_SX342_FMwebp_.jpg" alt="Where Do We Go">
+      <div class="overlay">
+        <h3>Where Do We Go</h3>
+        <p>Martin Luther King Jr.</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL382708W">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Frederick_Douglass%2C_head-and-shoulders_portrait%2C_facing_right%2C_ca_1850-1860_edit.jpg/800px-Frederick_Douglass%2C_head-and-shoulders_portrait%2C_facing_right%2C_ca_1850-1860_edit.jpg" alt="Narrative of the Life">
+      <div class="overlay">
+        <h3>Narrative of the Life</h3>
+        <p>Frederick Douglass</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45804W">
+      <img src="https://books.google.com.ng/books/publisher/content?id=fIaVEAAAQBAJ&pg=PP1&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U1E1rhrBSoXCxBqBHyeRnWCvwqc9A&w=1280" alt="Up From Slavery">
+      <div class="overlay">
+        <h3>Up From Slavery</h3>
+        <p>Booker T. Washington</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL81666W">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Beloved_%281987_1st_ed_dust_jacket_cover%29.jpg/800px-Beloved_%281987_1st_ed_dust_jacket_cover%29.jpg" alt="Beloved">
+      <div class="overlay">
+        <h3>Beloved</h3>
+        <p>Toni Morrison</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45883W">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/The_Fire_Next_Time_%281963%29_front_cover%2C_first_edition.jpg/500px-The_Fire_Next_Time_%281963%29_front_cover%2C_first_edition.jpg" alt="The Fire Next Time">
+      <div class="overlay">
+        <h3>The Fire Next Time</h3>
+        <p>James Baldwin</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45803W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Long_Walk_to_Freedom.jpg" alt="Long Walk to Freedom">
+      <div class="overlay">
+        <h3>Long Walk to Freedom</h3>
+        <p>Nelson Mandela</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL15891W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Why_We_Can%27t_Wait.jpg" alt="Why We Can’t Wait">
+      <div class="overlay">
+        <h3>Why We Can’t Wait</h3>
+        <p>Martin Luther King Jr.</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45874W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/65/ThingsFallApart.jpg" alt="Things Fall Apart">
+      <div class="overlay">
+        <h3>Things Fall Apart</h3>
+        <p>Chinua Achebe</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45931W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Decolonising_the_Mind_cover.jpg" alt="Decolonising the Mind">
+      <div class="overlay">
+        <h3>Decolonising the Mind</h3>
+        <p>Ngũgĩ wa Thiong’o</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45822W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Black_Skin%2C_White_Masks%2C_French_edition.jpg" alt="Black Skin, White Masks">
+      <div class="overlay">
+        <h3>Black Skin, White Masks</h3>
+        <p>Frantz Fanon</p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL45891W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/HalfYellowSun.JPG" alt="Freedom Is a Constant Struggle">
+      <div class="overlay">
+        <h3>Half of a Yellow Sun</h3>
+        <p>Chimamanda Adichie </p>
+      </div>
+    </div>
+
+    <div class="book-card" data-link="https://openlibrary.org/works/OL19060741W">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/The_Warmth_of_Other_Suns_%28Isabel_Wilkerson_book%29_cover.jpg" alt="The Warmth of Other Suns">
+      <div class="overlay">
+        <h3>The Warmth of Other Suns</h3>
+        <p>Isabel Wilkerson</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-connect">
+  <div class="about-left">
+    <h2>About Horizons</h2>
+    <p>
+      <strong>Horizons</strong> is a digital gateway to timeless African and world literature.
+      Our mission is to preserve culture, inspire readers, and celebrate stories
+      that shaped civilizations. Whether you're exploring classics or new voices,
+      Horizons connects you with books that matter.
+    </p>
+  </div>
+
+  <div class="about-right">
+    <img src="../images-z/charles1.png" alt="Charles Ernest" class="profile-pic" />
+    <h3>Charles Ernest</h3>
+     <p>Founder & Curator, Horizons Bookshelf</p>
+    <div class="social-links">
+      <a href="#" target="_blank" title="Twitter">
+        <img src="https://vectorjungal.com/files/preview/1280x1277/11722276299p9xxv7ewjuly8xx2r3tvap9lioe8piem0kqzsj1cxvrbg4jwjq37ulyw67u76qcjilhnssrtgqfeosvvnl1j6rbaet34f6gciayy.png?type=free" alt="FaceBook" />
+      </a>
+       <a href="#" target="_blank" title="Twitter">
+        <img src="https://pngimg.com/d/x_logo_PNG7.png" alt="Twitter" />
+      </a>
+      <a href="#" target="_blank" title="Instagram">
+        <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="Instagram" />
+      </a>
+      <a href="#" target="_blank" title="LinkedIn">
+        <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <h2>Join Our Reader’s Club</h2>
+      <p>Get fresh stories, book picks, and reading inspiration <br> straight to your inbox once a week.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+  <p>
+    © 2025 Horizons Bookshelf | Built by
+    <a href="#">WEBINK</a>
+  </p>
+</footer>
+
+    <!-- Link to external JS -->
+    <script src="../js/script.js"></script>
+     <script src="../js/menu.js"></script>
+  </body>
+</html>
