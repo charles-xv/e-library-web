@@ -80,4 +80,4 @@ e-library-web/
 
 ## Author
 
-Charles Nnanna Nwibo — [GitHub](https://github.com/charles-xv) · [LinkedIn](https://linkedin.com/in/charles-nnanna-666ba1252)
+Charles Nnanna — [GitHub](https://github.com/charles-xv) · [LinkedIn](https://linkedin.com/in/charles-nnanna-666ba1252)
